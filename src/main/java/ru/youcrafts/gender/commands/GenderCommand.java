@@ -46,12 +46,6 @@ public class GenderCommand extends BaseCommand
                 continue;
             }
 
-            if (gender != null) {
-                System.out.println(gender.equals(genderType.getKey()));
-            }
-            System.out.println(genderType.getKey());
-            System.out.println(gender);
-
             if (gender != null && gender.equals(genderType.getKey())) {
                 player.sendMessage(this.config.getConfig().getString(ConfigType.GENDER_ALREADY_MESSAGE.getName()));
                 return;
